@@ -4,24 +4,24 @@
 
     <div class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1"></span>
-        <input type="text" class="form-control" placeholder="First Name" aria-label="FirstName" [(ngModel)]="firstName"
+        <input type="text" class="form-control" placeholder="First Name" aria-label="FirstName" [(ngModel)]="employeeOb.firstName"
             aria-describedby="basic-addon1">
     </div>
 
     <div class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1"></span>
-        <input type="text" class="form-control" placeholder="Last Name" aria-label="LastName"
+        <input type="text" class="form-control" placeholder="Last Name" aria-label="LastName" [(ngModel)]="employeeOb.lastName"
             aria-describedby="basic-addon1">
     </div>
 
     <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Recipient's email"
+        <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Recipient's email" [(ngModel)]="employeeOb.email"
             aria-describedby="basic-addon2">
         <span class="input-group-text" id="basic-addon2">.com</span>
     </div>
 
     <div>
-        <select class="form-select  mb-3" aria-label="Default select example ">
+        <select class="form-select  mb-3" aria-label="Default select example " [(ngModel)]="employeeOb.departmentId" required>
             <option selected>Department</option>
             <option value="1">One</option>
             <option value="2">Two</option>
@@ -30,7 +30,7 @@
     </div>
 
     <div>
-        <select class="form-select  mb-3" aria-label="Default select example ">
+        <select class="form-select  mb-3" aria-label="Default select example " required  [(ngModel)]="employeeOb.roleId">
             <option selected>Role</option>
             <option value="1">One</option>
             <option value="2">Two</option>
