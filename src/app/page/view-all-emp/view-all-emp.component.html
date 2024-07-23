@@ -1,0 +1,24 @@
+<h3 class="text-center mb-4 bg-black p-2 fw-bolder text-white mt-5 mb-lg-5"> View All Employee</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Department</th>
+            <th scope="col">Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employeeList ">
+            <th scope="row">{{employee.id}}</th>
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.departmentId}}</td>
+            <td>{{employee.roleId}}</td>
+        </tr>
+    </tbody>
+</table>
