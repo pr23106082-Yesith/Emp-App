@@ -45,7 +45,7 @@ export class ViewAllEmpComponent {
       cancelButtonText: "No, cancel!",
       reverseButtons: true
     }).then((result) => {
-      if (result.isConfirmed) {
+      if (result.isConfirmed) { 
 
 
         this.http.delete(`http://localhost:8080/emp-controller/delete-emp/${employee.id}`, { responseType: 'text' }).subscribe(res => {
